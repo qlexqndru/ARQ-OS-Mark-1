@@ -1,0 +1,3 @@
+sudo rm -r /etc/nixos/* && sudo cp -r /home/x/ARQ.os/* /etc/nixos/ && sudo nixos-rebuild switch --impure --flake /etc/nixos/.#x
+
+sudo cp -r /home/x/ARQ.os/* /etc/nixos/ && sudo nixos-rebuild switch --impure --flake /etc/nixos/.#x
