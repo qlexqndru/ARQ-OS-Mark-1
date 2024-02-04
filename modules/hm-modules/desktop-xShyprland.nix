@@ -84,7 +84,7 @@ in
 
           # SWWW init and set wallpaper.
           |
-          exec-once=swww init && swww img ~/.config/hypr/swallver.png
+          exec-once=swww init && swww img -o "DP-1" ~/.config/hypr/swallver.png && swww img -o "VGA-1" ~/.config/hypr/swallver.png
 
           ########################################################################
           ########################################################################
