@@ -7,7 +7,7 @@ let
 in
 
 {
-    config = lib.mkIf (cfg.desktop == "xhyprland") {
+    config = lib.mkIf (cfg.desktop == "xShyprland") {
 
     # Enable network manager
     networking.networkmanager.enable = true;
