@@ -62,7 +62,8 @@ in
           # Main settings.
           |
           monitor=eDP-1,highres,0x0,1
-          monitor=HDMI-A-2,highres,1920x-420,1,transform,3
+          #monitor=HDMI-A-2,highres,1920x-420,1,transform,3
+          monitor=HDMI-A-2,highres,1920x0,1
 
           ########################################################################
 
@@ -84,7 +85,8 @@ in
 
           # SWWW init and set wallpaper.
           |
-          exec-once=swww init && swww img -o "eDP-1" ~/.config/hypr/swallhor.jpg && swww img -o "HDMI-A-2" ~/.config/hypr/swallver.png
+          #exec-once=swww init && swww img -o "eDP-1" ~/.config/hypr/swallhor.jpg && swww img -o "HDMI-A-2" ~/.config/hypr/swallver.png
+          exec-once=swww init && swww img -o "eDP-1" ~/.config/hypr/swallhor.jpg && swww img -o "HDMI-A-2" ~/.config/hypr/swallhor.jpg
 
           ########################################################################
           ########################################################################
