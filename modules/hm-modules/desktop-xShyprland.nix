@@ -84,7 +84,7 @@ in
 
           # SWWW init and set wallpaper.
           |
-          exec-once=swww init && swww img -o "HDMI-A-2" ~/.config/hypr/swallver.png
+          exec-once=swww init && swww img ~/.config/hypr/swallver.png
 
           ########################################################################
           ########################################################################
@@ -312,7 +312,7 @@ in
             layer = "overlay";
             width = 55;
           };
-          colors.background = "000000";
+          #colors.background = "000000";
         };
       };
 
