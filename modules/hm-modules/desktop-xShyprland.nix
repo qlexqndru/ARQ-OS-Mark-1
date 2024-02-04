@@ -135,7 +135,7 @@ in
           $term = kitty
           $file = thunar
           $browser = floorp
-          $code = vscode
+          $code = code
           |
           # Application shortcuts.
           |
