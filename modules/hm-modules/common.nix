@@ -146,6 +146,7 @@ in
         fira-code-symbols
         iosevka
 
+        mullvad
         telegram-desktop
         vlc
         floorp
