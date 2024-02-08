@@ -146,6 +146,7 @@ in
         fira-code-symbols
         iosevka
 
+        openvpn
         mullvad
         telegram-desktop
         vlc

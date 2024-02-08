@@ -145,6 +145,8 @@ in
           bind = $mainMod, W, exec, $browser # open browser
           bind = $mainMod, E, exec, $file # open file manager
           bind = $mainMod, T, exec, $code # open code
+          bind = , Print, exec, ${grimshot} --notify save screen - | ${swappy} -f -
+          bind = SHIFT, Print, exec, ${grimshot} --notify save area - | ${swappy} -f -
 
           ########################################################################
 

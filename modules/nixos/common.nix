@@ -59,6 +59,7 @@ in
         "audio"
         "video"
         "adbusers"
+        "libvirtd"
       ];
     };
 
@@ -73,6 +74,9 @@ in
       unzip
       xfce.thunar
     ];
+
+    virtualisation.libvirtd.enable = true;
+    programs.virt-manager.enable = true;
 
     # Enable sound with pipewire.
     sound.enable = true;
@@ -95,6 +99,8 @@ in
 
     services.gvfs.enable = true; # Mount, trash, and other functionalities
     services.tumbler.enable = true; # Thumbnail support for images
+
+    services.mullvad-vpn.enable = true;
 
     # ZSH.
     users.defaultUserShell = pkgs.zsh;
