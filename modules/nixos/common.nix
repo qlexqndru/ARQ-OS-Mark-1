@@ -1,5 +1,7 @@
 inputs: { config, lib, pkgs, ... }:
 
+
+
 let
 
   cfg = config.x;
@@ -7,6 +9,8 @@ let
 in
 
 {
+
+  
 
   config = {
 
@@ -16,6 +20,8 @@ in
         message = "x.desktop got invalid value.";
       }
     ];
+
+    
 
     system.stateVersion = lib.mkDefault "23.11";
 
@@ -63,6 +69,7 @@ in
       ];
     };
 
+
     # System packages.
     environment.systemPackages = with pkgs; [
       debootstrap
@@ -73,7 +80,21 @@ in
       zip
       unzip
       xfce.thunar
+      linuxKernel.packages.linux_6_7.cpupower
+      libva-utils
+      libvdpau
     ];
+
+      # Hardware drivers
+    hardware.opengl = {
+      enable = true;
+      extraPackages = with pkgs; [
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
+        intel-media-driver
+      ];
+    };
 
     virtualisation.libvirtd.enable = true;
     programs.virt-manager.enable = true;
@@ -102,6 +123,7 @@ in
 
     services.mullvad-vpn.enable = true;
 
+
     # ZSH.
     users.defaultUserShell = pkgs.zsh;
 
@@ -122,5 +144,4 @@ in
       };
     };
   };
-
 }

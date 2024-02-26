@@ -24,7 +24,7 @@ in
       enable = (!cfg.disableLoginManager);
       settings = {
         default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland --greeting 'Hello, sir'";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland --greeting 'Ek skal-at óttask'";
         };
       };
     };

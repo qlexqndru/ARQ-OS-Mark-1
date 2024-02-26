@@ -6,5 +6,6 @@ inputs: { ... }:
     (import ./nixos/common.nix inputs)
     ./nixos/desktop-xhyprland.nix
     ./nixos/desktop-xShyprland.nix
+
   ];
 }

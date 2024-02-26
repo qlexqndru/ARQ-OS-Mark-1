@@ -146,6 +146,8 @@ in
         fira-code-symbols
         iosevka
 
+        deluge
+
         openvpn
         mullvad
         telegram-desktop
