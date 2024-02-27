@@ -83,6 +83,9 @@ in
       linuxKernel.packages.linux_6_7.cpupower
       libva-utils
       libvdpau
+      isoimagewriter
+      ventoy-full
+      ntfs3g
     ];
 
       # Hardware drivers

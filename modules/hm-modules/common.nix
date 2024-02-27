@@ -147,6 +147,8 @@ in
         iosevka
 
         deluge
+        woeusb-ng
+        ventoy-full
 
         openvpn
         mullvad
