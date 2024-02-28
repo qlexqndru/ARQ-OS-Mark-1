@@ -66,9 +66,10 @@ in
         "video"
         "adbusers"
         "libvirtd"
+        "libvirt"
+        "kvm"
       ];
     };
-
 
     # System packages.
     environment.systemPackages = with pkgs; [
@@ -86,6 +87,8 @@ in
       isoimagewriter
       ventoy-full
       ntfs3g
+      spice-vdagent
+      spice-gtk
     ];
 
       # Hardware drivers
@@ -101,6 +104,7 @@ in
 
     virtualisation.libvirtd.enable = true;
     programs.virt-manager.enable = true;
+    virtualisation.spiceUSBRedirection.enable = true;
 
     # Enable sound with pipewire.
     sound.enable = true;
